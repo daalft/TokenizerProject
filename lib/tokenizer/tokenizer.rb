@@ -1,1 +1,1 @@
-module Tokenizer	class Tokenizer	@@lang		def initialize lang			@@lang = lang		end	endend
+module Tokenizer	class Tokenizer	@@lang		def initialize lang			@@lang = lang		end	endend
