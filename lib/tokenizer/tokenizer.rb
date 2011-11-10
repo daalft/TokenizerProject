@@ -1,1 +1,1 @@
-puts "This is a tokenizer."
+module Tokenizer	class Tokenizer	@@lang		def initialize lang			@@lang = lang		end	endend
