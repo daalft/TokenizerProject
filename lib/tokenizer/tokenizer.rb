@@ -1,1 +1,1 @@
-puts "Hallo! Ein Tokenizer!"
+puts "I'm a COOL tokenizer."
