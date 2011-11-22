@@ -1,2 +1,10 @@
+<<<<<<< HEAD
 README
 Zeile 2
+=======
+README file
+
+Tokenizer Project
+
+This is a tokenizer in progress programmed for class.
+>>>>>>> 8f5651e3cf282c03c004a02915383bf342bb1b1b

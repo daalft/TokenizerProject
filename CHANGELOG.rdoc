@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 CHANGELOG
+=======
+CHANGELOG file
+>>>>>>> 8f5651e3cf282c03c004a02915383bf342bb1b1b
