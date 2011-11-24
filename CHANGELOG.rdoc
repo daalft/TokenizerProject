@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-CHANGELOG
-=======
-CHANGELOG file
->>>>>>> 8f5651e3cf282c03c004a02915383bf342bb1b1b
+==COMPLETED
+===0.0.1
+Program structure and very simple tokenization.
+==PLANNED
+===0.0.2
+Correct tokenization of punctuation.

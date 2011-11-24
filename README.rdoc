@@ -1,10 +1,20 @@
-<<<<<<< HEAD
-README
-Zeile 2
-=======
-README file
-
-Tokenizer Project
-
-This is a tokenizer in progress programmed for class.
->>>>>>> 8f5651e3cf282c03c004a02915383bf342bb1b1b
+= Tokenizer Project
+== DESCRIPTION
+This is a tokenizer intended for simple tasks.
+=== Implemented Features
+* simple string tokenization
+* test structure
+== Installation
+If you don't know how to install this,... you have a problem.
+== Synopsis
+The synopsis is not implemented.
+== Support
+No support has been implemented.
+== Changelog
+For further information on the evolution of this tokenizer, see the CHANGELOG.rdoc file.
+== Caution
+Keep quiet while using this tokenizer. Loud noises may or may not interfere with function.
+== License
+This file is licensed under the conditions listed in the LICENSE.rdoc file.
+== Version
+The actual version of this tokenizer can be found in the lib/tokenizer/version.rb file.

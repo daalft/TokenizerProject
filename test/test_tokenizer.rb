@@ -5,7 +5,7 @@ class TestTokenizer < Test::Unit::TestCase
 
 	def setup
 		@t = Tokenizer::Tokenizer.new
-		@result = @t.tokenize("test string")
+		@result = @t.tokenize("test\t\n string")
 	end
 	
 	def test_has_method
@@ -22,6 +22,10 @@ class TestTokenizer < Test::Unit::TestCase
 	
 	def test_array_contains_strings
 		assert_instance_of(String, @result.first)
+	end
+	
+	def test_splits_more_whitespace
+		assert_equal(["test", "string"], @result)
 	end
 end
 

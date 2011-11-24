@@ -1,14 +1,17 @@
-module Tokenizer
+﻿module Tokenizer
 
 	class Tokenizer
-		@lang
+		
+	@lang
+	WL = /\s+/
 		def initialize(lang = :de)
 			@lang = lang
 		end
 		
 		def tokenize(str)
-			tokens = []
-			tokens = str.split(/\s+/)
+			
+			tokens = str.split(WL)
+			
 			tokens
 		end
 	end
