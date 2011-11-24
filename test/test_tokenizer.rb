@@ -1,6 +1,6 @@
 require 'tokenizer/tokenizer'
 require 'test/unit'
-
+#This is the test suite for lib/tokenizer/tokenizer.rb
 class TestTokenizer < Test::Unit::TestCase
 
 	def setup

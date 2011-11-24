@@ -1,4 +1,4 @@
-LICENSE file
-
+= LICENSE file
+== Description
 This file is licensed to David Alfter and may not be used without consent by aforementionned person. 
 By reading this, you agree to these terms.
