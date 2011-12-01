@@ -19,6 +19,9 @@ module Tokenizer
 					puts args
 					exit
 				end
+				args.on('-v', '--version', 'Show the version!') do
+					puts "Tokenizer version #{Tokenizer::VERSION} written and copyrighted by David Alfter."
+				end
 			end
 		end
 	end #class
