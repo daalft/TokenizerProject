@@ -1,7 +1,8 @@
 require 'tokenizer'
 
-options = :de
+options = Tokenizer::OptParser.parse(ARGV)
 t = Tokenizer::Tokenizer.new(options)
+
 while str = gets
 	puts t.tokenize(str)
 end

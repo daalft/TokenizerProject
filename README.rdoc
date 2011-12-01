@@ -1,11 +1,11 @@
 = Tokenizer Project
-== DESCRIPTION
+== Description
 This is a tokenizer intended for simple tasks.
 === Implemented Features
 * simple string tokenization
 * test structure
 == Installation
-If you don't know how to install this,... you have a problem.
+Please read rubygems.org on how to install gems.
 == Synopsis
 The synopsis is not implemented.
 == Support
@@ -13,7 +13,7 @@ No support has been implemented.
 == Changelog
 For further information on the evolution of this tokenizer, see the CHANGELOG.rdoc file.
 == Caution
-Keep quiet while using this tokenizer. Loud noises may or may not interfere with function.
+Keep quiet while using this tokenizer. Loud noise may or may not interfere with correct function.
 == License
 This file is licensed under the conditions listed in the LICENSE.rdoc file.
 == Version
