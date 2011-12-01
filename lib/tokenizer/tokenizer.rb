@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-module Tokenizer	class Tokenizer	@@lang		def initialize lang			@@lang = lang		end	endend
-=======
 ﻿# :title: My cool Tokenizer!!!
 # :main: README.rdoc
 #The module Tokenizer is the namespace for this project.
@@ -24,4 +21,3 @@ module Tokenizer
 		end
 	end
 end
->>>>>>> ad87841b36091e771f8361bb68b8e26cde876678

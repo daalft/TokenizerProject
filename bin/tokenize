@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-require 'tokenizer'
-=======
 require 'tokenizer'
 
 options = Tokenizer::OptParser.parse(ARGV)
@@ -9,4 +6,3 @@ t = Tokenizer::Tokenizer.new(options)
 while str = gets
 	puts t.tokenize(str)
 end
->>>>>>> ad87841b36091e771f8361bb68b8e26cde876678

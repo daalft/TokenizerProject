@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-README file
-
-Tokenizer Project
-
-This is a tokenizer in progress programmed for class.
-=======
 = Tokenizer Project
 == Description
 This is a tokenizer intended for simple tasks.
@@ -25,4 +18,3 @@ Keep quiet while using this tokenizer. Loud noise may or may not interfere with 
 This file is licensed under the conditions listed in the LICENSE.rdoc file.
 == Version
 The actual version of this tokenizer can be found in the lib/tokenizer/version.rb file.
->>>>>>> ad87841b36091e771f8361bb68b8e26cde876678
