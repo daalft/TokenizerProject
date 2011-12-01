@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 LICENSE file
 
+=======
+= LICENSE file
+== Description
+>>>>>>> ad87841b36091e771f8361bb68b8e26cde876678
 This file is licensed to David Alfter and may not be used without consent by aforementionned person. 
 By reading this, you agree to these terms.

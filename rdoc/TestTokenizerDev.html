@@ -1,0 +1,1930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: TestTokenizerDev</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./test/test_de_tokenizer_dev_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="test/test_de_tokenizer_dev.rb">test/test_de_tokenizer_dev.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Test::Unit::TestCase</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-compare">#compare</a></li>
+					
+					<li><a href="#method-i-setup">#setup</a></li>
+					
+					<li><a href="#method-i-test_tokenization_001">#test_tokenization_001</a></li>
+					
+					<li><a href="#method-i-test_tokenization_002">#test_tokenization_002</a></li>
+					
+					<li><a href="#method-i-test_tokenization_003">#test_tokenization_003</a></li>
+					
+					<li><a href="#method-i-test_tokenization_004">#test_tokenization_004</a></li>
+					
+					<li><a href="#method-i-test_tokenization_005">#test_tokenization_005</a></li>
+					
+					<li><a href="#method-i-test_tokenization_006">#test_tokenization_006</a></li>
+					
+					<li><a href="#method-i-test_tokenization_007">#test_tokenization_007</a></li>
+					
+					<li><a href="#method-i-test_tokenization_008">#test_tokenization_008</a></li>
+					
+					<li><a href="#method-i-test_tokenization_009">#test_tokenization_009</a></li>
+					
+					<li><a href="#method-i-test_tokenization_010">#test_tokenization_010</a></li>
+					
+					<li><a href="#method-i-test_tokenization_011">#test_tokenization_011</a></li>
+					
+					<li><a href="#method-i-test_tokenization_012">#test_tokenization_012</a></li>
+					
+					<li><a href="#method-i-test_tokenization_013">#test_tokenization_013</a></li>
+					
+					<li><a href="#method-i-test_tokenization_014">#test_tokenization_014</a></li>
+					
+					<li><a href="#method-i-test_tokenization_015">#test_tokenization_015</a></li>
+					
+					<li><a href="#method-i-test_tokenization_016">#test_tokenization_016</a></li>
+					
+					<li><a href="#method-i-test_tokenization_017">#test_tokenization_017</a></li>
+					
+					<li><a href="#method-i-test_tokenization_018">#test_tokenization_018</a></li>
+					
+					<li><a href="#method-i-test_tokenization_019">#test_tokenization_019</a></li>
+					
+					<li><a href="#method-i-test_tokenization_020">#test_tokenization_020</a></li>
+					
+					<li><a href="#method-i-test_tokenization_021">#test_tokenization_021</a></li>
+					
+					<li><a href="#method-i-test_tokenization_022">#test_tokenization_022</a></li>
+					
+					<li><a href="#method-i-test_tokenization_023">#test_tokenization_023</a></li>
+					
+					<li><a href="#method-i-test_tokenization_024">#test_tokenization_024</a></li>
+					
+					<li><a href="#method-i-test_tokenization_025">#test_tokenization_025</a></li>
+					
+					<li><a href="#method-i-test_tokenization_026">#test_tokenization_026</a></li>
+					
+					<li><a href="#method-i-test_tokenization_027">#test_tokenization_027</a></li>
+					
+					<li><a href="#method-i-test_tokenization_028">#test_tokenization_028</a></li>
+					
+					<li><a href="#method-i-test_tokenization_029">#test_tokenization_029</a></li>
+					
+					<li><a href="#method-i-test_tokenization_030">#test_tokenization_030</a></li>
+					
+					<li><a href="#method-i-test_tokenization_031">#test_tokenization_031</a></li>
+					
+					<li><a href="#method-i-test_tokenization_032">#test_tokenization_032</a></li>
+					
+					<li><a href="#method-i-test_tokenization_033">#test_tokenization_033</a></li>
+					
+					<li><a href="#method-i-test_tokenization_034">#test_tokenization_034</a></li>
+					
+					<li><a href="#method-i-test_tokenization_035">#test_tokenization_035</a></li>
+					
+					<li><a href="#method-i-test_tokenization_036">#test_tokenization_036</a></li>
+					
+					<li><a href="#method-i-test_tokenization_037">#test_tokenization_037</a></li>
+					
+					<li><a href="#method-i-test_tokenization_039">#test_tokenization_039</a></li>
+					
+					<li><a href="#method-i-test_tokenization_040">#test_tokenization_040</a></li>
+					
+					<li><a href="#method-i-test_tokenization_041">#test_tokenization_041</a></li>
+					
+					<li><a href="#method-i-test_tokenization_042">#test_tokenization_042</a></li>
+					
+					<li><a href="#method-i-test_tokenization_043">#test_tokenization_043</a></li>
+					
+					<li><a href="#method-i-test_tokenization_044">#test_tokenization_044</a></li>
+					
+					<li><a href="#method-i-test_tokenization_046">#test_tokenization_046</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./CHANGELOG_rdoc.html">CHANGELOG.rdoc</a></li>
+				
+					<li class="file"><a href="./LICENSE_rdoc.html">LICENSE.rdoc</a></li>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="./Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="./bin/tokenize.html">tokenize</a></li>
+				
+					<li class="file"><a href="./doc/DELETEME.html">DELETEME</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Tokenizer.html">Tokenizer</a></li>
+				
+					<li><a href="./Tokenizer/Tokenizer.html">Tokenizer::Tokenizer</a></li>
+				
+					<li><a href="./TestTokenizer.html">TestTokenizer</a></li>
+				
+					<li><a href="./TestTokenizerDev.html">TestTokenizerDev</a></li>
+				
+					<li><a href="./TestVersion.html">TestVersion</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">TestTokenizerDev</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="setup-method" class="method-detail ">
+				<a name="method-i-setup"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">setup</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="setup-source">
+<pre>
+   <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 7</span>
+7:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">setup</span>
+8:     <span class="ruby-ivar">@de_tokenizer</span> = <span class="ruby-constant">Tokenizer</span><span class="ruby-operator">::</span><span class="ruby-constant">Tokenizer</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:de</span>)
+9:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_001"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_001</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 11</span>
+11:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_001</span>
+12:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">'ich ging? du, und ich nicht (konnte nicht)? Warum?!!'</span>
+13:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ ich ging ? du , und ich nicht ( konnte nicht ) ? Warum ? ! !}</span>
+14:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+15:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_002"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_002</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 17</span>
+17:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_002</span>
+18:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Die deutschen Umlaute und Sonderzeichen, wie in Mäuse, Scheiß und Tütchen, sind blöd!&quot;</span>
+19:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{Die deutschen Umlaute und Sonderzeichen , wie in Mäuse , Scheiß und Tütchen , sind blöd !}</span>
+20:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+21:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_003"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_003</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 23</span>
+23:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_003</span>
+24:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Abkürzungen, wie z.B. usw. und d.h. können zu Problemem führen.&quot;</span>
+25:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{Abkürzungen , wie z.B. usw. und d.h. können zu Problemem führen .}</span>
+26:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+27:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_004"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_004</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 29</span>
+29:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_004</span>
+30:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Es gibt mehr als 1.023.345 Menschen in Deutschland, die keine Tausenderpunkte verstehen.&quot;</span>
+31:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{Es gibt mehr als 1.023.345 Menschen in Deutschland , die keine Tausenderpunkte verstehen .}</span>
+32:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+33:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_005"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_005</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 35</span>
+35:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_005</span>
+36:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Cocktails, wie Apfel-Martini, Rum-Kirsche-Cola und andere, bereiten nicht nur Menschen Probleme.&quot;</span>
+37:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Cocktails , wie Apfel-Martini , Rum-Kirsche-Cola und andere , bereiten nicht nur Menschen Probleme . }</span>
+38:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+39:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_006"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_006</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 41</span>
+41:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_006</span>
+42:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">'Es gibt viele verschiedene Zeichen, die noch in Texten vorkommen können wie - zum Beispiel - diese hier &quot;text&quot; oder (text).'</span>
+43:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{Es gibt viele verschiedene Zeichen , die noch in Texten vorkommen können wie - zum Beispiel - diese hier &quot; text &quot; oder ( text ) .}</span>
+44:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+45:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_007"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_007</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 47</span>
+47:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_007</span>
+48:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Abkürzungen sind immer ein Problem, da auch Leerzeichen dazwischen stehen können, wie z. B. hier.&quot;</span>
+49:     <span class="ruby-identifier">etalon</span> = [<span class="ruby-value str">&quot;Abkürzungen&quot;</span>, <span class="ruby-value str">&quot;sind&quot;</span>, <span class="ruby-value str">&quot;immer&quot;</span>, <span class="ruby-value str">&quot;ein&quot;</span>, <span class="ruby-value str">&quot;Problem&quot;</span>, <span class="ruby-value str">&quot;,&quot;</span>, <span class="ruby-value str">&quot;da&quot;</span>, <span class="ruby-value str">&quot;auch&quot;</span>, <span class="ruby-value str">&quot;Leerzeichen&quot;</span>, <span class="ruby-value str">&quot;dazwischen&quot;</span>, <span class="ruby-value str">&quot;stehen&quot;</span>, <span class="ruby-value str">&quot;können&quot;</span>, <span class="ruby-value str">&quot;,&quot;</span>, <span class="ruby-value str">&quot;wie&quot;</span>, <span class="ruby-value str">&quot;z. B.&quot;</span>, <span class="ruby-value str">&quot;hier&quot;</span>, <span class="ruby-value str">&quot;.&quot;</span>]
+50:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+51:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_008"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_008</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 53</span>
+53:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_008</span>
+54:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Außerdem kann es nach Abkürzungen und Satzenden auch mit Großschreibung weiter gehen, bei z.B. Aufzählungen.&quot;</span>
+55:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{Außerdem kann es nach Abkürzungen und Satzenden auch mit Großschreibung weiter gehen , bei z.B. Aufzählungen .}</span>
+56:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+57:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_009"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_009</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 59</span>
+59:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_009</span>
+60:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Ein weiteres Problem sind solche Getrennt- und Zusammenschreibungen.&quot;</span>
+61:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{Ein weiteres Problem sind solche Getrenntschreibungen und Zusammenschreibungen .}</span>
+62:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+63:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_010"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_010</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 65</span>
+65:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_010</span>
+66:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;In manchen Texten gibt es auch Worttrennung am Zeilen- ende.&quot;</span>
+67:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{In manchen Texten gibt es auch Worttrennung am Zeilenende .}</span>
+68:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+69:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_011"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_011</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 71</span>
+71:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_011</span> <span class="ruby-comment cmt">#Ellipsis</span>
+72:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Der Satz endet in einer Ellips...&quot;</span>
+73:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Der Satz endet in einer Ellips... }</span> <span class="ruby-comment cmt">#die elliptischen Punkte sollten nicht vom Wort getrennt werden</span>
+74:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+75:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_012"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_012</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 77</span>
+77:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_012</span> <span class="ruby-comment cmt">#Fehlende Leerzeichen</span>
+78:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Der Satz endet.Das Leerzeichen fehlt.&quot;</span>
+79:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Der Satz endet . Das Leerzeichen fehlt . }</span> <span class="ruby-comment cmt">#/\.\s(?=[A-Z])/ wuerde die Saetze nicht trennen</span>
+80:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+81:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_013"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_013</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 83</span>
+83:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_013</span> <span class="ruby-comment cmt">#Bindestriche</span>
+84:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Das Bindeglied - manisch-depressives Verhalten, binden-verbinden&quot;</span>
+85:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Das Bindeglied - manisch-depressives Verhalten , binden - verbinden}</span>
+86:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+87:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_014"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_014</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 89</span>
+89:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_014</span> <span class="ruby-comment cmt">#Abkuerzungen</span>
+90:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Der Satz enthielt z.B. Fehler&quot;</span>
+91:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Der Satz enthielt z.B. Fehler }</span> <span class="ruby-comment cmt">#/\.\s(?=[A-Z])/ wuerde hinter Punkt den Satz beenden</span>
+92:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+93:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_015"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_015</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 95</span>
+95:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_015</span> <span class="ruby-comment cmt">#Fehlende Grossbuchstaben</span>
+96:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Der Satz endet. der Satz beginnt&quot;</span>
+97:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Der Satz endet . der Satz beginnt }</span> <span class="ruby-comment cmt">#/\.\s(?=[A-Z])/ wuerde die Saetze nicht trennen</span>
+98:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+99:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_016"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_016</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 101</span>
+101:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_016</span> <span class="ruby-comment cmt">#Franzoesisch</span>
+102:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;L'art de l'univers, c'est un art&quot;</span>
+103:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ L' art de l' univers , c'est un art }</span> <span class="ruby-comment cmt">#Kontrovers!</span>
+104:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+105:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_017"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_017</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 107</span>
+107:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_017</span> <span class="ruby-comment cmt">#James Bond</span>
+108:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Bond,... James Bond.&quot;</span>
+109:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Bond , ... James Bond . }</span> <span class="ruby-comment cmt">#Kontrovers!</span>
+110:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+111:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_018"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_018</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 113</span>
+113:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_018</span> <span class="ruby-comment cmt">#Inches</span>
+114:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;The square had four 9\&quot; sides&quot;</span>
+115:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ The square had four 9&quot; sides }</span>
+116:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+117:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_019"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_019</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 119</span>
+119:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_019</span> <span class="ruby-comment cmt">#Abkuerzung zugleich Lexikon-Eintrag</span>
+120:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;In fig. 3, a fig can be seen. Fig. no. 4 shows no fig.&quot;</span>
+121:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ In fig. 3 , a fig can be seen . Fig. no. 4 shows no fig . }</span> <span class="ruby-comment cmt">#fig sowohl als Abkuerzung als auch als Wort</span>
+122:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+123:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_020"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_020</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 125</span>
+125:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_020</span> <span class="ruby-comment cmt">#Leerzeichen-getrennte Zusammengehörigkeiten</span>
+126:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;They booked the flight New York-Los Angeles&quot;</span>
+127:     <span class="ruby-identifier">etalon</span> = [<span class="ruby-value str">&quot;They&quot;</span>, <span class="ruby-value str">&quot;booked&quot;</span>, <span class="ruby-value str">&quot;the&quot;</span>, <span class="ruby-value str">&quot;flight&quot;</span>, <span class="ruby-value str">&quot;New York&quot;</span>, <span class="ruby-value str">&quot;-&quot;</span>, <span class="ruby-value str">&quot;Los Angeles&quot;</span>] <span class="ruby-comment cmt">#oder mit Bindestrich verbunden</span>
+128:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+129:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_021"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_021</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 131</span>
+131:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_021</span> <span class="ruby-comment cmt">#Ordinale</span>
+132:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Der 1. Platz ging an den Sieger&quot;</span>
+133:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Der 1. Platz ging an den Sieger }</span>
+134:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+135:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_022"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_022</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 137</span>
+137:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_022</span> <span class="ruby-comment cmt">#Klitika</span>
+138:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Er war's, stimmt's?&quot;</span>
+139:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Er war es , stimmt es ? }</span> <span class="ruby-comment cmt">#Kontrovers! Benoetigt komplexere Analyse</span>
+140:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+141:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_023"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_023</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 143</span>
+143:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_023</span> <span class="ruby-comment cmt">#Datums- und Zeitangaben</span>
+144:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Es passierte am 13. Januar 2011 um 12:13 Uhr&quot;</span>
+145:     <span class="ruby-identifier">etalon</span> = [ <span class="ruby-value str">&quot;Es&quot;</span>, <span class="ruby-value str">&quot;passierte&quot;</span>, <span class="ruby-value str">&quot;am&quot;</span>, <span class="ruby-value str">&quot;13. Januar 2011&quot;</span>, <span class="ruby-value str">&quot;um&quot;</span>, <span class="ruby-value str">&quot;12:13 Uhr&quot;</span>]
+146:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+147:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_024"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_024</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 149</span>
+149:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_024</span> <span class="ruby-comment cmt">#Eingebettete Saetze</span>
+150:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;\&quot;This is all?\&quot; George asked.&quot;</span>
+151:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ This is all ? George asked . }</span> <span class="ruby-comment cmt">#kann zu ungrammatischen Saetzen fuehren</span>
+152:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+153:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_025"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_025</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 155</span>
+155:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_025</span> <span class="ruby-comment cmt">#Eingebettete Saetze 2</span>
+156:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;\&quot;Das ist alles?\&quot; fragte sie.&quot;</span>
+157:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Das ist alles ? fragte sie . }</span> <span class="ruby-comment cmt">#ungrammatischer Satz &quot;fragte sie.&quot;</span>
+158:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+159:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_026"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_026</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 162</span>
+162:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_026</span>
+163:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Die deutschen Umlaute und Sonderzeichen, wie in Mäuse, Scheiß und Tütchen, sind blöd!&quot;</span>
+164:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Die deutschen Umlaute und Sonderzeichen , wie in Mäuse , Scheiß und Tütchen , sind blöd ! }</span>
+165:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+166:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_027"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_027</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 168</span>
+168:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_027</span>
+169:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Abkürzungen, wie z.B. usw. und d.h. können zu Problemem führen.&quot;</span>
+170:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Abkürzungen , wie z.B. usw. und d.h. können zu Problemem führen . }</span>
+171:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+172:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_028"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_028</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 174</span>
+174:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_028</span>
+175:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Es gibt mehr als 1.023.345 Menschen in Deutschland, die keine Tausenderpunkte verstehen.&quot;</span>
+176:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Es gibt mehr als 1.023.345 Menschen in Deutschland , die keine Tausenderpunkte verstehen . }</span>
+177:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+178:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_029"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_029</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 180</span>
+180:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_029</span>
+181:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Cocktails, wie Apfel-Martini, Rum-Kirsche-Cola und andere, bereiten nicht nur Menschen Probleme.&quot;</span>
+182:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Cocktails , wie Apfel-Martini , Rum-Kirsche-Cola und andere , bereiten nicht nur Menschen Probleme . }</span>
+183:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+184:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_030"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_030</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 186</span>
+186:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_030</span> <span class="ruby-comment cmt">#Ellipsis</span>
+187:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Der Satz endet in einer Ellips...&quot;</span>
+188:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Der Satz endet in einer Ellips... }</span> <span class="ruby-comment cmt">#die elliptischen Punkte sollten nicht vom Wort getrennt werden</span>
+189:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+190:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_031"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_031</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 192</span>
+192:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_031</span> <span class="ruby-comment cmt">#Fehlende Leerzeichen</span>
+193:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Der Satz endet.Das Leerzeichen fehlt.&quot;</span>
+194:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Der Satz endet . Das Leerzeichen fehlt . }</span> <span class="ruby-comment cmt">#/\.\s(?=[A-Z])/ wuerde die Saetze nicht trennen</span>
+195:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+196:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_032"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_032</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 198</span>
+198:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_032</span> <span class="ruby-comment cmt">#Bindestriche</span>
+199:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Das Bindeglied - manisch-depressives Verhalten, binden-verbinden&quot;</span>
+200:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Das Bindeglied - manisch-depressives Verhalten , binden - verbinden}</span>
+201:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+202:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_033"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_033</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 204</span>
+204:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_033</span> <span class="ruby-comment cmt">#Abkuerzungen</span>
+205:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Der Satz enthielt z.B. Fehler&quot;</span>
+206:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Der Satz enthielt z.B. Fehler }</span> <span class="ruby-comment cmt">#/\.\s(?=[A-Z])/ wuerde hinter Punkt den Satz beenden</span>
+207:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+208:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_034"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_034</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 210</span>
+210:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_034</span> <span class="ruby-comment cmt">#Fehlende Grossbuchstaben</span>
+211:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Der Satz endet. der Satz beginnt&quot;</span>
+212:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Der Satz endet . der Satz beginnt }</span> <span class="ruby-comment cmt">#/\.\s(?=[A-Z])/ wuerde die Saetze nicht trennen</span>
+213:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+214:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_035"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_035</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 216</span>
+216:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_035</span> <span class="ruby-comment cmt">#Franzoesisch</span>
+217:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;L'art de l'univers, c'est un art&quot;</span>
+218:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ L' art de l' univers , c'est un art }</span> <span class="ruby-comment cmt">#Kontrovers!</span>
+219:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+220:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_036"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_036</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 222</span>
+222:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_036</span> <span class="ruby-comment cmt">#James Bond</span>
+223:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Bond,... James Bond.&quot;</span>
+224:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Bond , ... James Bond . }</span> <span class="ruby-comment cmt">#Kontrovers!</span>
+225:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+226:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_037"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_037</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 228</span>
+228:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_037</span> <span class="ruby-comment cmt">#Inches</span>
+229:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;The square had four 9\&quot; sides&quot;</span>
+230:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ The square had four 9&quot; sides }</span>
+231:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+232:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_039"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_039</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 234</span>
+234:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_039</span> <span class="ruby-comment cmt">#Abkuerzung zugleich Lexikon-Eintrag</span>
+235:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;In fig. 3, a fig can be seen. Fig. no. 4 shows no fig.&quot;</span>
+236:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ In fig. 3 , a fig can be seen . Fig. no. 4 shows no fig . }</span> <span class="ruby-comment cmt">#fig sowohl als Abkuerzung als auch als Wort</span>
+237:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+238:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_040"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_040</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 240</span>
+240:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_040</span> <span class="ruby-comment cmt">#Leerzeichen-getrennte Zusammengehörigkeiten</span>
+241:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;They booked the flight New York-Los Angeles&quot;</span>
+242:     <span class="ruby-identifier">etalon</span> = [<span class="ruby-value str">&quot;They&quot;</span>, <span class="ruby-value str">&quot;booked&quot;</span>, <span class="ruby-value str">&quot;the&quot;</span>, <span class="ruby-value str">&quot;flight&quot;</span>, <span class="ruby-value str">&quot;New York&quot;</span>, <span class="ruby-value str">&quot;-&quot;</span>, <span class="ruby-value str">&quot;Los Angeles&quot;</span>] <span class="ruby-comment cmt">#oder mit Bindestrich verbunden</span>
+243:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+244:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_041"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_041</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 246</span>
+246:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_041</span> <span class="ruby-comment cmt">#Ordinale</span>
+247:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Der 1. Platz ging an den Sieger&quot;</span>
+248:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Der 1. Platz ging an den Sieger }</span>
+249:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+250:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_042"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_042</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 252</span>
+252:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_042</span> <span class="ruby-comment cmt">#Klitika</span>
+253:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Er war's, stimmt's?&quot;</span>
+254:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ Er war es , stimmt es ? }</span> <span class="ruby-comment cmt">#Kontrovers! Benoetigt komplexere Analyse</span>
+255:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+256:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_043"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_043</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Datums- und Zeitangaben
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 259</span>
+259:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_043</span> 
+260:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">&quot;Es passierte am 13. Januar 2011 um 12:13 Uhr&quot;</span>
+261:     <span class="ruby-identifier">etalon</span> = [<span class="ruby-value str">&quot;Es&quot;</span>, <span class="ruby-value str">&quot;passierte&quot;</span>, <span class="ruby-value str">&quot;am&quot;</span>, <span class="ruby-value str">&quot;13. Januar 2011&quot;</span>, <span class="ruby-value str">&quot;um&quot;</span>, <span class="ruby-value str">&quot;12:13 Uhr&quot;</span>]
+262:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+263:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_044"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_044</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Eingebettete Sätze
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 266</span>
+266:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_044</span>
+267:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">'&quot;This is all?&quot; George asked.'</span>
+268:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{ This is all ? George asked . }</span> <span class="ruby-comment cmt">#kann zu ungrammatischen Saetzen fuehren</span>
+269:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+270:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-tokenization--method" class="method-detail ">
+				<a name="method-i-test_tokenization_046"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_tokenization_046</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="test-tokenization--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 272</span>
+272:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_tokenization_046</span> <span class="ruby-comment cmt">#Eingebettete Saetze 2</span>
+273:     <span class="ruby-identifier">input</span> = <span class="ruby-value str">'&quot;Das ist alles?&quot; fragte sie.'</span>
+274:     <span class="ruby-identifier">etalon</span> = <span class="ruby-node">%{Das ist alles ? fragte sie .}</span> <span class="ruby-comment cmt">#ungrammatischer Satz &quot;fragte sie.&quot;</span>
+275:     <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">etalon</span>, <span class="ruby-identifier">input</span>)
+276:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="compare-method" class="method-detail ">
+				<a name="method-i-compare"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">compare</span><span
+						class="method-args">(exp_result, input)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="compare-source">
+<pre>
+     <span class="ruby-comment cmt"># File test/test_de_tokenizer_dev.rb, line 279</span>
+279:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">exp_result</span>, <span class="ruby-identifier">input</span>)
+280:     <span class="ruby-identifier">act_result</span> = <span class="ruby-ivar">@de_tokenizer</span>.<span class="ruby-identifier">tokenize</span>(<span class="ruby-identifier">input</span>)
+281:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">exp_result</span>, <span class="ruby-identifier">act_result</span>)
+282:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

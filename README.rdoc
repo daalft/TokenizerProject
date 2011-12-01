@@ -1,5 +1,28 @@
+<<<<<<< HEAD
 README file
 
 Tokenizer Project
 
 This is a tokenizer in progress programmed for class.
+=======
+= Tokenizer Project
+== Description
+This is a tokenizer intended for simple tasks.
+=== Implemented Features
+* simple string tokenization
+* test structure
+== Installation
+Please read rubygems.org on how to install gems.
+== Synopsis
+The synopsis is not implemented.
+== Support
+No support has been implemented.
+== Changelog
+For further information on the evolution of this tokenizer, see the CHANGELOG.rdoc file.
+== Caution
+Keep quiet while using this tokenizer. Loud noise may or may not interfere with correct function.
+== License
+This file is licensed under the conditions listed in the LICENSE.rdoc file.
+== Version
+The actual version of this tokenizer can be found in the lib/tokenizer/version.rb file.
+>>>>>>> ad87841b36091e771f8361bb68b8e26cde876678

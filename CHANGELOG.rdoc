@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 CHANGELOG file
+=======
+==COMPLETED
+===0.0.1
+Program structure and very simple tokenization.
+==PLANNED
+===0.0.2
+Correct tokenization of punctuation.
+>>>>>>> ad87841b36091e771f8361bb68b8e26cde876678
