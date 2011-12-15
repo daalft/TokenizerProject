@@ -1,5 +1,6 @@
 require 'optparse'
 require 'tokenizer/version'
+require 'tokenizer/tokenizer'
 
 module Tokenizer
 	class OptParser
@@ -36,7 +37,34 @@ module Tokenizer
 				end
 				#read filename, make absolute path, existence test, readability test, fehlermeldungen liefern (separat) ( + test)
 				args.on('-f', '--file', 'Read filename') do
-					
+					if ARGV[-1] == '-f'
+						puts "Please specify a filename with \'-f\'!"
+						puts "tokenize -f \"filename\""
+						exit
+					else
+						t = Tokenizer.new
+						f = ARGV[-1]
+						fp = File.expand_path(f)
+						if File.exist?(fp)
+							if File.readable?(fp)
+								puts "All correct! Successfully opened \'#{fp}\'"
+								puts "Tokenizing..."
+								File.open(fp) do |file|
+									while line = file.gets
+										puts t.tokenize(line)
+									end
+								end
+							else
+								STDERR.puts "The specified file is not readable!"
+								STDERR.puts fp
+								STDERR.puts "Please change permission on file and retry!"
+							end
+						else
+							STDERR.puts "The specified file could not be found!"
+							STDERR.puts fp
+							STDERR.puts "Make sure you have entered the filename correctly!"
+						end
+					end
 				end
 			
 			end
