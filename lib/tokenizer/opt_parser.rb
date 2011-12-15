@@ -4,20 +4,26 @@ require 'tokenizer/tokenizer'
 
 module Tokenizer
 	class OptParser
+		LType = ['de', 'en', 'sp']
+		Err_M = "The system has encountered the following error:\n"
 		#singleton methode
 		def self.parse args
-			@@options = {}
+			@@options = {:lang => :de}
 			parser = create_parser #implizit : OptParser.create_parser
 			begin
 				parser.parse(args)
+			rescue OptionParser::MissingArgument => e
+				STDERR.puts Err_M
+				STDERR.puts "#{e.message}\nYou have to specify an argument for this option"
+				exit 1
 			rescue OptionParser::InvalidArgument
 			rescue OptionParser::InvalidOption => e
-				
-				STDERR.puts "The system has encountered the following error:\n#{e.message}"
-				STDERR.puts "You have used an invalid option on the tokenizer."
+				STDERR.puts Err_M
+				STDERR.puts "#{e.message}\nYou have used an invalid option on the tokenizer."
 				STDERR.puts "To view the help and a list of valid options\ntype \"tokenize -h\""
 				exit 1
 			end
+			@@options
 		end
 		
 		private
@@ -35,38 +41,38 @@ module Tokenizer
 					puts "Tokenizer version #{VERSION} written and copyrighted by David Alfter."
 					exit
 				end
-				#read filename, make absolute path, existence test, readability test, fehlermeldungen liefern (separat) ( + test)
-				args.on('-f', '--file', 'Read filename') do
-					if ARGV[-1] == '-f'
-						puts "Please specify a filename with \'-f\'!"
-						puts "tokenize -f \"filename\""
-						exit
-					else
-						t = Tokenizer.new
-						f = ARGV[-1]
-						fp = File.expand_path(f)
-						if File.exist?(fp)
-							if File.readable?(fp)
-								puts "All correct! Successfully opened \'#{fp}\'"
-								puts "Tokenizing..."
-								File.open(fp) do |file|
-									while line = file.gets
-										puts t.tokenize(line)
-									end
-								end
-							else
-								STDERR.puts "The specified file is not readable!"
-								STDERR.puts fp
-								STDERR.puts "Please change permission on file and retry!"
+				args.on('-f', '--file filename', 'Read filename') do |filename|
+					f = filename
+					fp = File.expand_path(f)
+					if File.exist?(fp)
+						if File.readable?(fp)
+							puts "All correct! Successfully opened \'#{fp}\'"
+							puts "Tokenizing..."
+							@@options[:filename] = fp
+							begin
+							File.open(fp) do |file|
+								@@options[:lines] = file.readlines
+							end
+							rescue IOError => e
+								STDERR.puts Err_M
+								STDERR.puts "#{e.message}\nError opening the file."
 							end
 						else
-							STDERR.puts "The specified file could not be found!"
+							STDERR.puts "The specified file is not readable!"
 							STDERR.puts fp
-							STDERR.puts "Make sure you have entered the filename correctly!"
+							STDERR.puts "Please change permission on file and retry!"
 						end
+					else
+						STDERR.puts "The specified file could not be found!"
+						STDERR.puts fp
+						STDERR.puts "Make sure you have entered the filename correctly!"
 					end
+					exit
 				end
-			
+				args.on('-l', '--lang lang', LType, "Choose a language for the tokenizer!", "Possible values: #{LType}") do |lang|
+					@@options[:lang] = lang.to_sym
+					
+				end
 			end
 		end
 	end #class
