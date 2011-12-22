@@ -1,6 +1,5 @@
 require 'optparse'
 require 'tokenizer/version'
-require 'tokenizer/tokenizer'
 
 module Tokenizer
 	class OptParser
