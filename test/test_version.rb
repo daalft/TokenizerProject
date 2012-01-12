@@ -4,7 +4,7 @@ require 'test/unit'
 class TestVersion < Test::Unit::TestCase
 	#Setup a tokenizer
 	def setup
-		@t = Tokenizer::Tokenizer.new(:de)
+		@t = Tokenizer::Tokenizer.new()
 	end
 	#Test whether version is a string.
 	def test_version_is_string

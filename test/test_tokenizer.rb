@@ -27,5 +27,17 @@ class TestTokenizer < Test::Unit::TestCase
 	def test_splits_more_whitespace
 		assert_equal(["test", "string"], @result)
 	end
+	
+	def test_simple_email_not_split
+		assert_equal(["abc@mail.com"], @t.tokenize("abc@mail.com"))
+	end
+	
+	def test_complex_email_not_split
+		assert_equal(["this_is_a_mail.123@something.info"], @t.tokenize("this_is_a_mail.123@something.info"))
+	end
+	
+	def test_no_empty_tokens
+		assert_equal(["hallo", "(", ")", "du"], @t.tokenize("hallo\n(\n\n)\ndu"))
+	end
 end
 
