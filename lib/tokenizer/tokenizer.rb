@@ -10,7 +10,7 @@ module Tokenizer
 	#WL is the "word limit" used by the tokenizer.
 	WL = /\s+/
 	PRE = %w{ ( " ' [ { « ˂ ‹ ‘ ‚ “ „ ¡ ¿ 「 『 〔 }
-	POST = %w{ ! " ' ] ) , . / : ; = ? } ­ · » ˃ ; › ’ ” ‟ 」 』 〕 。'}
+	POST = %w{ ! " ] ) , . / : ; = ? } ­ · » ˃ ; › ’ ” ‟ 」 』 〕 。'}
 		#Constructs a Tokenizer with specified language. Standard = :de
 		def initialize(params = {:lang => :de})
 			check_params(params)
